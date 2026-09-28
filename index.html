@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio - Vytoria Lourdes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">Meu Portfólio</h1>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio">
+
+        <div class="inicio-texto">
+
+            <p class="subtitulo">Olá, eu sou</p>
+
+            <h2>Vytoria Lourdes</h2>
+
+            <h3>Estudante de Desenvolvimento de Sistemas</h3>
+
+            <p>
+                Sou estudante da área de tecnologia e estou desenvolvendo
+                meus conhecimentos em programação, desenvolvimento web
+                e criação de projetos.
+            </p>
+
+            <a href="#projetos" class="botao">
+                Ver meus projetos
+            </a>
+
+        </div>
+
+        <div class="inicio-imagem">
+
+            <div class="circulo">
+                💻
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="secao">
+
+        <h2 class="titulo">Sobre mim</h2>
+
+        <div class="sobre-container">
+
+            <div class="sobre-card">
+
+                <h3>Quem sou eu?</h3>
+
+                <p>
+                    Sou estudante de Desenvolvimento de Sistemas e tenho
+                    interesse pela área de tecnologia e programação.
+                </p>
+
+                <p>
+                    Durante meus estudos venho aprendendo conceitos de
+                    HTML, CSS, JavaScript, banco de dados e desenvolvimento
+                    de sistemas.
+                </p>
+
+                <p>
+                    Gosto de aprender coisas novas, trabalhar em equipe
+                    e buscar soluções para diferentes problemas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="secao habilidades">
+
+        <h2 class="titulo">Minhas habilidades</h2>
+
+        <div class="habilidades-container">
+
+            <div class="habilidade">
+                <span>🌐</span>
+
+                <h3>HTML</h3>
+
+                <p>
+                    Criação e estruturação de páginas web.
+                </p>
+            </div>
+
+
+            <div class="habilidade">
+                <span>🎨</span>
+
+                <h3>CSS</h3>
+
+                <p>
+                    Estilização, layouts e páginas responsivas.
+                </p>
+            </div>
+
+
+            <div class="habilidade">
+                <span>⚡</span>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Interatividade e lógica de programação.
+                </p>
+            </div>
+
+
+            <div class="habilidade">
+                <span>🗄️</span>
+
+                <h3>Banco de Dados</h3>
+
+                <p>
+                    Criação e manipulação de bancos de dados.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+
+        <h2 class="titulo">Meus projetos</h2>
+
+        <div class="projetos-container">
+
+
+            <!-- CATÁLOGO -->
+            <div class="projeto">
+
+                <div class="projeto-icone">
+                    🎮
+                </div>
+
+                <h3>Catálogo de Games</h3>
+
+                <p>
+                    Sistema para organizar e apresentar jogos,
+                    utilizando JavaScript e conceitos de programação.
+                </p>
+
+                <button onclick="abrirProjeto('catalogo')">
+                    Ver projeto
+                </button>
+
+            </div>
+
+
+            <!-- POKÉDEX -->
+            <div class="projeto">
+
+                <div class="projeto-icone">
+                    🔴
+                </div>
+
+                <h3>Pokédex</h3>
+
+                <p>
+                    Projeto interativo desenvolvido com HTML, CSS,
+                    JavaScript e consumo de API.
+                </p>
+
+                <button onclick="abrirPokedex()">
+                    Ver projeto
+                </button>
+
+            </div>
+
+
+            <!-- BIBLIOTECA -->
+            <div class="projeto">
+
+                <div class="projeto-icone">
+                    📚
+                </div>
+
+                <h3>Biblioteca Digital</h3>
+
+                <p>
+                    Sistema para cadastro, busca, empréstimo e
+                    devolução de livros.
+                </p>
+
+                <button onclick="abrirProjeto('biblioteca')">
+                    Ver projeto
+                </button>
+
+            </div>
+
+
+            <!-- BIORENOVA -->
+            <div class="projeto">
+
+                <div class="projeto-icone">
+                    🌱
+                </div>
+
+                <h3>BioRenova</h3>
+
+                <p>
+                    Projeto relacionado à biodiversidade,
+                    sustentabilidade e conscientização ambiental.
+                </p>
+
+                <button onclick="abrirProjeto('biorenova')">
+                    Ver projeto
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao contato">
+
+        <h2 class="titulo">Entre em contato</h2>
+
+        <div class="contato-container">
+
+            <p>
+                Gostou do meu portfólio? Entre em contato comigo!
+            </p>
+
+            <form onsubmit="enviarFormulario(event)">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                >
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © 2026 - Meu Portfólio
+        </p>
+
+        <p>
+            Desenvolvido por Vytoria Lourdes
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
